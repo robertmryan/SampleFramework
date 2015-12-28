@@ -10,6 +10,9 @@
 		8365D6C01C31DC01008B3118 /* SampleFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 8365D6BF1C31DC01008B3118 /* SampleFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8365D6C91C31DC28008B3118 /* SampleFrameworkObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8365D6C71C31DC28008B3118 /* SampleFrameworkObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8365D6CA1C31DC28008B3118 /* SampleFrameworkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365D6C81C31DC28008B3118 /* SampleFrameworkObject.m */; };
+		8365D6D31C31DD7F008B3118 /* SampleFrameworkMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8365D6D21C31DD7F008B3118 /* SampleFrameworkMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8365D6D81C31DD8F008B3118 /* SampleFrameworkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365D6C81C31DC28008B3118 /* SampleFrameworkObject.m */; };
+		8365D6D91C31DDB6008B3118 /* SampleFrameworkObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8365D6C71C31DC28008B3118 /* SampleFrameworkObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,10 +21,20 @@
 		8365D6C11C31DC01008B3118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8365D6C71C31DC28008B3118 /* SampleFrameworkObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleFrameworkObject.h; sourceTree = "<group>"; };
 		8365D6C81C31DC28008B3118 /* SampleFrameworkObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleFrameworkObject.m; sourceTree = "<group>"; };
+		8365D6D01C31DD7F008B3118 /* SampleFrameworkMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleFrameworkMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8365D6D21C31DD7F008B3118 /* SampleFrameworkMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleFrameworkMacOS.h; sourceTree = "<group>"; };
+		8365D6D41C31DD7F008B3118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8365D6B81C31DC01008B3118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8365D6CC1C31DD7F008B3118 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				8365D6BE1C31DC01008B3118 /* SampleFramework */,
+				8365D6D11C31DD7F008B3118 /* SampleFrameworkMacOS */,
 				8365D6BD1C31DC01008B3118 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				8365D6BC1C31DC01008B3118 /* SampleFramework.framework */,
+				8365D6D01C31DD7F008B3118 /* SampleFrameworkMacOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +73,15 @@
 			path = SampleFramework;
 			sourceTree = "<group>";
 		};
+		8365D6D11C31DD7F008B3118 /* SampleFrameworkMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				8365D6D21C31DD7F008B3118 /* SampleFrameworkMacOS.h */,
+				8365D6D41C31DD7F008B3118 /* Info.plist */,
+			);
+			path = SampleFrameworkMacOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -67,6 +91,15 @@
 			files = (
 				8365D6C91C31DC28008B3118 /* SampleFrameworkObject.h in Headers */,
 				8365D6C01C31DC01008B3118 /* SampleFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8365D6CD1C31DD7F008B3118 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8365D6D31C31DD7F008B3118 /* SampleFrameworkMacOS.h in Headers */,
+				8365D6D91C31DDB6008B3118 /* SampleFrameworkObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +124,24 @@
 			productReference = 8365D6BC1C31DC01008B3118 /* SampleFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		8365D6CF1C31DD7F008B3118 /* SampleFrameworkMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8365D6D51C31DD7F008B3118 /* Build configuration list for PBXNativeTarget "SampleFrameworkMacOS" */;
+			buildPhases = (
+				8365D6CB1C31DD7F008B3118 /* Sources */,
+				8365D6CC1C31DD7F008B3118 /* Frameworks */,
+				8365D6CD1C31DD7F008B3118 /* Headers */,
+				8365D6CE1C31DD7F008B3118 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleFrameworkMacOS;
+			productName = SampleFrameworkMacOS;
+			productReference = 8365D6D01C31DD7F008B3118 /* SampleFrameworkMacOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +152,9 @@
 				ORGANIZATIONNAME = "Robert Ryan";
 				TargetAttributes = {
 					8365D6BB1C31DC01008B3118 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					8365D6CF1C31DD7F008B3118 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -118,12 +172,20 @@
 			projectRoot = "";
 			targets = (
 				8365D6BB1C31DC01008B3118 /* SampleFramework */,
+				8365D6CF1C31DD7F008B3118 /* SampleFrameworkMacOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8365D6BA1C31DC01008B3118 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8365D6CE1C31DD7F008B3118 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,6 +200,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8365D6CA1C31DC28008B3118 /* SampleFrameworkObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8365D6CB1C31DD7F008B3118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8365D6D81C31DD8F008B3118 /* SampleFrameworkObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +334,48 @@
 			};
 			name = Release;
 		};
+		8365D6D61C31DD7F008B3118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SampleFrameworkMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.SampleFrameworkMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8365D6D71C31DD7F008B3118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SampleFrameworkMacOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.SampleFrameworkMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -281,6 +393,14 @@
 			buildConfigurations = (
 				8365D6C51C31DC01008B3118 /* Debug */,
 				8365D6C61C31DC01008B3118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8365D6D51C31DD7F008B3118 /* Build configuration list for PBXNativeTarget "SampleFrameworkMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8365D6D61C31DD7F008B3118 /* Debug */,
+				8365D6D71C31DD7F008B3118 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

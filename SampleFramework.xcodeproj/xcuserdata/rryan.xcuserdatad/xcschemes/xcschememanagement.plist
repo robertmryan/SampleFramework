@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SampleFrameworkMacOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>8365D6BB1C31DC01008B3118</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8365D6CF1C31DD7F008B3118</key>
 		<dict>
 			<key>primary</key>
 			<true/>
