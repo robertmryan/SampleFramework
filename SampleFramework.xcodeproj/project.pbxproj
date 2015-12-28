@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8365D6BC1C31DC01008B3118 /* SampleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8365D6BC1C31DC01008B3118 /* SampleFrameworkiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleFrameworkiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8365D6BF1C31DC01008B3118 /* SampleFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleFramework.h; sourceTree = "<group>"; };
 		8365D6C11C31DC01008B3118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8365D6C71C31DC28008B3118 /* SampleFrameworkObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleFrameworkObject.h; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		8365D6B21C31DC01008B3118 = {
 			isa = PBXGroup;
 			children = (
-				8365D6BE1C31DC01008B3118 /* SampleFramework */,
+				8365D6BE1C31DC01008B3118 /* SampleFrameworkiOS */,
 				8365D6D11C31DD7F008B3118 /* SampleFrameworkMacOS */,
 				8365D6BD1C31DC01008B3118 /* Products */,
 			);
@@ -56,13 +56,13 @@
 		8365D6BD1C31DC01008B3118 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8365D6BC1C31DC01008B3118 /* SampleFramework.framework */,
+				8365D6BC1C31DC01008B3118 /* SampleFrameworkiOS.framework */,
 				8365D6D01C31DD7F008B3118 /* SampleFrameworkMacOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8365D6BE1C31DC01008B3118 /* SampleFramework */ = {
+		8365D6BE1C31DC01008B3118 /* SampleFrameworkiOS */ = {
 			isa = PBXGroup;
 			children = (
 				8365D6BF1C31DC01008B3118 /* SampleFramework.h */,
@@ -70,6 +70,7 @@
 				8365D6C81C31DC28008B3118 /* SampleFrameworkObject.m */,
 				8365D6C11C31DC01008B3118 /* Info.plist */,
 			);
+			name = SampleFrameworkiOS;
 			path = SampleFramework;
 			sourceTree = "<group>";
 		};
@@ -106,9 +107,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8365D6BB1C31DC01008B3118 /* SampleFramework */ = {
+		8365D6BB1C31DC01008B3118 /* SampleFrameworkiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8365D6C41C31DC01008B3118 /* Build configuration list for PBXNativeTarget "SampleFramework" */;
+			buildConfigurationList = 8365D6C41C31DC01008B3118 /* Build configuration list for PBXNativeTarget "SampleFrameworkiOS" */;
 			buildPhases = (
 				8365D6B71C31DC01008B3118 /* Sources */,
 				8365D6B81C31DC01008B3118 /* Frameworks */,
@@ -119,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = SampleFramework;
+			name = SampleFrameworkiOS;
 			productName = SampleFramework;
-			productReference = 8365D6BC1C31DC01008B3118 /* SampleFramework.framework */;
+			productReference = 8365D6BC1C31DC01008B3118 /* SampleFrameworkiOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8365D6CF1C31DD7F008B3118 /* SampleFrameworkMacOS */ = {
@@ -171,7 +172,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8365D6BB1C31DC01008B3118 /* SampleFramework */,
+				8365D6BB1C31DC01008B3118 /* SampleFrameworkiOS */,
 				8365D6CF1C31DD7F008B3118 /* SampleFrameworkMacOS */,
 			);
 		};
@@ -388,13 +389,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8365D6C41C31DC01008B3118 /* Build configuration list for PBXNativeTarget "SampleFramework" */ = {
+		8365D6C41C31DC01008B3118 /* Build configuration list for PBXNativeTarget "SampleFrameworkiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8365D6C51C31DC01008B3118 /* Debug */,
 				8365D6C61C31DC01008B3118 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8365D6D51C31DD7F008B3118 /* Build configuration list for PBXNativeTarget "SampleFrameworkMacOS" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +405,7 @@
 				8365D6D71C31DD7F008B3118 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

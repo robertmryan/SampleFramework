@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8365D6BB1C31DC01008B3118"
-               BuildableName = "SampleFramework.framework"
-               BlueprintName = "SampleFramework"
+               BuildableName = "SampleFrameworkiOS.framework"
+               BlueprintName = "SampleFrameworkiOS"
                ReferencedContainer = "container:SampleFramework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8365D6BB1C31DC01008B3118"
-            BuildableName = "SampleFramework.framework"
-            BlueprintName = "SampleFramework"
+            BuildableName = "SampleFrameworkiOS.framework"
+            BlueprintName = "SampleFrameworkiOS"
             ReferencedContainer = "container:SampleFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8365D6BB1C31DC01008B3118"
-            BuildableName = "SampleFramework.framework"
-            BlueprintName = "SampleFramework"
+            BuildableName = "SampleFrameworkiOS.framework"
+            BlueprintName = "SampleFrameworkiOS"
             ReferencedContainer = "container:SampleFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
