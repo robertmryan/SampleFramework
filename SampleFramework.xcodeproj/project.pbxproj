@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8365D6C01C31DC01008B3118 /* SampleFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 8365D6BF1C31DC01008B3118 /* SampleFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8365D6C91C31DC28008B3118 /* SampleFrameworkObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8365D6C71C31DC28008B3118 /* SampleFrameworkObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8365D6CA1C31DC28008B3118 /* SampleFrameworkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8365D6C81C31DC28008B3118 /* SampleFrameworkObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8365D6BC1C31DC01008B3118 /* SampleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8365D6BF1C31DC01008B3118 /* SampleFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleFramework.h; sourceTree = "<group>"; };
 		8365D6C11C31DC01008B3118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8365D6C71C31DC28008B3118 /* SampleFrameworkObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleFrameworkObject.h; sourceTree = "<group>"; };
+		8365D6C81C31DC28008B3118 /* SampleFrameworkObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleFrameworkObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				8365D6BF1C31DC01008B3118 /* SampleFramework.h */,
+				8365D6C71C31DC28008B3118 /* SampleFrameworkObject.h */,
+				8365D6C81C31DC28008B3118 /* SampleFrameworkObject.m */,
 				8365D6C11C31DC01008B3118 /* Info.plist */,
 			);
 			path = SampleFramework;
@@ -59,6 +65,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8365D6C91C31DC28008B3118 /* SampleFrameworkObject.h in Headers */,
 				8365D6C01C31DC01008B3118 /* SampleFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8365D6CA1C31DC28008B3118 /* SampleFrameworkObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
